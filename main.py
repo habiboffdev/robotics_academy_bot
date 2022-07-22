@@ -2,9 +2,9 @@ import telebot
 from telebot import types
 from string import Template
 from db import Database
+import creds
 
-
-TOKEN = "5394556613:AAFfqceoE2ukKxXHEqvhFc_vwnLuNqam2wU"
+TOKEN = creds.api_key
 bot = telebot.TeleBot(TOKEN, parse_mode = False)
 db = Database("db.db")
 
